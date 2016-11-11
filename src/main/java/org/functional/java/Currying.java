@@ -21,14 +21,28 @@ import java.util.function.Function;
  */
 public class Currying {
 
+    /**
+     *  Function which accepts two argument and add them.
+     * @return java.util.function.BiFunction which accepts two argument
+     */
     static BiFunction<Integer, Integer, Integer> add() {
         return (x, y) -> x + y;
     }
 
+    /**
+     * @return
+     */
     static Function<Integer, Function<Integer, Integer>> add2() {
         return x -> y -> x + y;
     }
 
+    /**
+     * This method will curry the constant value from the inputs for
+     * {@link Currying#add()} method.
+     *
+     * @param x
+     * @return java.util.function.Function
+     */
     static Function<Integer, Integer> curryLeft(final Integer x) {
         return y -> add().apply(x, y);
     }

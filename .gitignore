@@ -1,2 +1,5 @@
 .idea/
 build/
+java.iml
+.gradle/
+

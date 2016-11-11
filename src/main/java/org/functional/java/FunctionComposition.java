@@ -9,19 +9,31 @@ import java.util.function.Function;
 @SuppressWarnings("UseOfSystemOutOrSystemErr")
 public class FunctionComposition {
 
+    /**
+     * @return
+     */
     static Function<Integer, Integer> add10() {
         return (value) -> 10 + value;
     }
 
+    /**
+     * @return
+     */
     static Function<Integer, Integer> mult5() {
         return (value) -> 5 * value;
     }
 
+    /**
+     * @return
+     */
     static Function<Integer, Integer> add10Mult5() {
         return (value) -> 5 * (value + 10);
     }
 
 
+    /**
+     * @param args
+     */
     public static void main(final String[] args) {
         final Integer plus10 = add10().apply(10);
         final Integer mult5 = mult5().apply(10);
