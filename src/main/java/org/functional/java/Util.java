@@ -8,7 +8,7 @@ import java.util.function.Consumer;
  */
 @SuppressWarnings({"UseOfSystemOutOrSystemErr", "ClassNamingConvention"})
 public class Util {
-    static <T> Consumer<T> print() {
+    public static <T> Consumer<T> print() {
         return t -> System.out.println("Value ::: " + t);
     }
 }
