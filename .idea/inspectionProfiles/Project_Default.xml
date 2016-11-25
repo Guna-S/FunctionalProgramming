@@ -254,7 +254,6 @@
       </option>
       <option name="ignoreClassWithParameterization" value="true" />
       <option name="ignoreThrowables" value="true" />
-      <option name="commentsAreContent" value="true" />
     </inspection_tool>
     <inspection_tool class="EmptyInitializer" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="EmptyParenMethodAccessedAsParameterless" enabled="false" level="ERROR" enabled_by_default="false" />

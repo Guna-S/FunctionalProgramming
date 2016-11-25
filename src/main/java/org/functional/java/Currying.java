@@ -14,7 +14,7 @@ import java.util.function.Function;
  * only one of its parameters ahead of time and then
  * it would get its second parameter later when mult5AfterAdd10 is called.
  * <p>
- * Here is teh situtation we need Currying
+ * Here is the situation where we need Currying.
  *
  * @author Ramachandran Murugaian on 21-10-2016 11:55.
  * @see PointFreeNotation#add10Mult5()  
@@ -22,7 +22,8 @@ import java.util.function.Function;
 public class Currying {
 
     /**
-     *  Function which accepts two argument and add them.
+     * Function which accepts two argument and add them.
+     *
      * @return java.util.function.BiFunction which accepts two argument
      */
     static BiFunction<Integer, Integer, Integer> add() {
